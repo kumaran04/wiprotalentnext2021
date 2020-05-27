@@ -1,0 +1,146 @@
+1.MAXIMUM NUMBER IN AN INTEGER ARRAY
+
+import java.util.Scanner;
+public class Largest_Number 
+{
+    public static void main(String[] args) 
+    {
+        int n, max;
+        Scanner s = new Scanner(System.in);
+        n=25
+        int a[] = new int[n];
+        System.out.println("Enter elements of array:");
+        for(int i = 0; i < n; i++)
+        {
+            a[i] = s.nextInt();
+        }
+        max = a[0];
+        for(int i = 0; i < n; i++)
+        {
+            if(max < a[i])
+            {
+                max = a[i];
+            }
+        }
+        System.out.println("Maximum value:"+max);
+    }
+}
+
+2.MOST FREQUENTLY OCCURED ELEMENT IN AN ARRAY
+
+import java.util.*; 
+  
+class Mostfequent { 
+      
+    static int mostFrequent(int arr[], int n) 
+    { 
+ 
+        Arrays.sort(arr); 
+
+        int max_count = 1, res = arr[0]; 
+        int curr_count = 1; 
+          
+        for (int i = 1; i < n; i++) 
+        { 
+            if (a[i] == a[i - 1]) 
+                curr_count++; 
+            else 
+            { 
+                if (curr_count > max_count) 
+                { 
+                    max_count = curr_count; 
+                    res = a[i - 1]; 
+                } 
+                curr_count = 1; 
+            } 
+        } 
+      
+        if (curr_count > max_count) 
+        { 
+            max_count = curr_count; 
+            res = arr[n - 1]; 
+        } 
+      
+        return max_count;
+    } 
+      
+    public static void main (String[] args) { 
+          
+        int n;
+        Scanner s = new Scanner(System.in);
+        n=10
+        int a[] = new int[n];
+        System.out.println("Enter elements of array:");
+        System.out.println(mostFrequent(arr,n)); 
+          
+    } 
+} 
+
+3.FACTORIAL OF A NUMBER
+
+class Factorial{  
+ public static void main(String args[]){  
+  int i,fact=1;  
+  int number;
+  Scanner s = new Scanner(System.in);
+  number = new;
+  for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  System.out.println("Factorial of "+number+" is: "+fact);    
+ }  
+}  
+
+4.REMOVE DUPLICATE CHARACTERS IN A STRING
+
+
+import java.util.*; 
+
+class Removeduplicates
+{ 
+	static String removeDuplicate(char str[], int n) 
+	{ 
+
+		int index = 0; 
+		for (int i = 0; i < n; i++) 
+		{ 
+
+			int j; 
+			for (j = 0; j < i; j++) 
+			{ 
+				if (str[i] == str[j]) 
+				{ 
+					break; 
+				} 
+			} 
+			if (j == i) 
+			{ 
+				str[index++] = str[i]; 
+			} 
+		} 
+		return String.valueOf(Arrays.copyOf(str, index)); 
+	} 
+	public static void main(String[] args) 
+	{ 
+		Scanner sc = new Scanner(System.in);
+                String str;
+                char arr[] = new char[6];
+                System.out.println("Enter character array: ");
+                str = sc.next();
+                for(int i=0; i!= 6; i++)
+	         arr[i] = str.charAt(i);
+		int n = str.length; 
+		System.out.println(removeDuplicate(str, n)); 
+	} 
+} 
+
+
+5.ALGORITHM FOR LEAST PERFECT SQUARE DIVISIBLE BY 21,36 AND 66
+
+L.C.M. of 21, 36, 66 = 2772.
+Now, 2772 = 2 x 2 x 3 x 3 x 7 x 11
+To make it a perfect square, it must be multiplied by 7 x 11.
+So, required number
+= 22 x 32 x 72 x 112
+= 213444
+
