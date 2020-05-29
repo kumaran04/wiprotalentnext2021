@@ -1,0 +1,77 @@
+FLOW CONTROL STATEMENTS
+
+1.
+import java.util.*;
+public class PNZ
+{
+    public static void main(String[] args) 
+    {
+        int n=4712;
+        if(n > 0)
+        {
+            System.out.println(n+" is a positive number");
+        }
+        else if(n < 0)
+        {
+            System.out.println(n+" is a negative number");
+        }
+        else
+        {
+            System.out.println(n+" is zero");
+        }
+    }
+}
+
+2.
+
+import java.util.*;
+public class OE
+{
+    public static void main(String[] args) 
+    {
+        int n=4712;
+        if(n%2== 0)
+        {
+            System.out.println(n+" is an even number");
+        }
+        else
+        {
+            System.out.println(n+" is an odd number");
+        }
+    }
+}
+
+3.
+
+import java.util.*;
+class Checkforcommands
+{
+    public static void main (String[] args)
+    {
+        if (args.length ==0)
+            {
+            System.out.println("No Values");
+            }
+        else{
+            for(String i : args)   
+                System.out.print(i+" , ");
+            }
+  }
+}
+
+4.
+
+import java.util.*;
+public class AlphabeticalOrder{
+ public static void main (String[] args){
+    char a=s;
+    char b=k;
+    if(a>b){
+           System.out.println(b+","+a);
+       }
+    else{
+           System.out.println(a+","+b);
+       }
+ }
+}
+
