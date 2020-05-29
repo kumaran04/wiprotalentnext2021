@@ -1,0 +1,70 @@
+CLASSES AND OBJECTS
+
+1.
+
+public class Box {
+    double w,h,d;
+    Box(double width,double height,double depth)
+    {
+        w=width;
+        h=height;
+        d=depth;
+    }
+    double volume()
+    { double v;
+    v=w*h*d;
+    return v;
+    }
+    public static void main(String[] args) {
+    Box bc = new Box(4.7,15.12,31.12);
+    System.out.println(bc.volume());
+    }
+}
+
+
+2.
+
+public class Calci {
+
+    public static void main(String[] args) {
+    System.out.println(Calculator.powerDouble(15.12, 3));
+    System.out.println(Calculator.powerInt(47,4));
+    }
+
+}
+
+class Calculator
+{
+    static double powerInt(int num1,int num2)
+    {
+        return Math.pow(num1,num2);
+    }
+static double powerDouble(double num1,int num2)
+{
+    return Math.pow(num1,num2);
+}
+}
+
+
+3.
+
+public class Patient{
+   String n;
+   double w,h;
+   Patient(String name,double weight,double height){
+     n=name;
+     w=weight;
+     h=height;
+   }
+   double bodymassindex(){
+    double bmi;
+    bmi=(w/(h*h))*703;
+    return bmi;
+   }
+class Patients{
+ public static void main(String[] args){
+     Patient p=new pateint("XXYYZZ",175.5,6.2)
+     System.out.println(p.bodymassindex());
+  }
+ }
+}
